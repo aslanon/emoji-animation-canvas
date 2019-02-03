@@ -5,7 +5,7 @@ Emoji animation using webpack. (Canvas animation)
 1. Github Page
         http://aslanon.github.io/emoji-animation-canvas
 2. CodePen Page
-        https://codepen.io/onuraslan/pen/MZdOdd
+        https://codepen.io/onuraslan/details/MZdOdd
 
 <img src="https://raw.githubusercontent.com/aslanon/emoji-animation-canvas/master/statics/screenshot.png"></img>
 
