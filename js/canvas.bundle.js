@@ -98,8 +98,7 @@
 
 var ctx = document.querySelector('canvas').getContext('2d');
 var canvas = ctx.canvas;
-var input = document.querySelector('#input');
-var text = input.value;
+var text = canvas.getAttribute('emoji');
 var fontSize = canvas.getAttribute('size');
 canvas.width = canvas.getBoundingClientRect().width;
 canvas.height = canvas.getBoundingClientRect().height;
@@ -119,11 +118,6 @@ var draw = new Draw(ctx);
 window.addEventListener('resize', function () {
 	canvas.width = canvas.getBoundingClientRect().width;
 	canvas.height = canvas.getBoundingClientRect().height;
-});
-
-input.addEventListener('blur', function (e) {
-	text = input.value;
-	init();
 });
 
 init();
