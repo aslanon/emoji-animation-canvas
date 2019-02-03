@@ -1,7 +1,6 @@
 let ctx = document.querySelector('canvas').getContext('2d')
 let canvas = ctx.canvas
-let input = document.querySelector('#input');
-let text = input.value
+let text = canvas.getAttribute('emoji')
 let fontSize = canvas.getAttribute('size');
 canvas.width = canvas.getBoundingClientRect().width
 canvas.height = canvas.getBoundingClientRect().height
@@ -18,17 +17,10 @@ let animation = {
 let mouse = new Mouse(canvas)
 let draw = new Draw(ctx)
 
-
 window.addEventListener('resize', ()=>{
 	canvas.width = canvas.getBoundingClientRect().width
 	canvas.height = canvas.getBoundingClientRect().height
 })
-
-input.addEventListener('blur', function(e){
-	text = input.value
-	init()
-})
-
 
 init()
 frame()
