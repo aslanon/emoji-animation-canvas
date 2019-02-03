@@ -130,7 +130,7 @@ function init() {
 		textAlign: 'center',
 		textBaseline: 'middle'
 	});
-	draw.fillText(text, canvas.width / 2, canvas.height / 2);
+	draw.fillText(text, (canvas.width - fontSize) / 2, canvas.height / 2);
 	pixels = scene(ctx, animation.density);
 	var _iteratorNormalCompletion = true;
 	var _didIteratorError = false;
