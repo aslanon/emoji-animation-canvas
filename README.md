@@ -1,19 +1,19 @@
 # Demo
 
-Personal web page design using webpack. (Canvas animation)
+Emoji animation using webpack. (Canvas animation)
 
 1. Github Page
-        http://aslanon.github.io
+        http://aslanon.github.io/emoji-animation-canvas
 2. CodePen Page
-        https://codepen.io/onuraslan/pen/zeKzKa
+        https://codepen.io/onuraslan/pen/MZdOdd
 
-<img src="https://raw.githubusercontent.com/aslanon/aslanon.github.io/master/statics/screenshot.png"></img>
+<img src="https://raw.githubusercontent.com/aslanon/emoji-animation-canvas/master/statics/screenshot.png"></img>
 
 ## Getting Started
 
 1.  Clone the repo:
 
-        git clone git@github.com:aslanon/aslanon.github.io.git
+        git clone git@github.com:aslanon/emoji-animation-canvas.git
 
 2.  Install dependencies:
 

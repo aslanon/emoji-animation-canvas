@@ -1,6 +1,7 @@
 let ctx = document.querySelector('canvas').getContext('2d')
 let canvas = ctx.canvas
-let text = canvas.getAttribute('text');
+let input = document.querySelector('#input');
+let text = input.value
 let fontSize = canvas.getAttribute('size');
 canvas.width = canvas.getBoundingClientRect().width
 canvas.height = canvas.getBoundingClientRect().height
@@ -17,6 +18,18 @@ let animation = {
 let mouse = new Mouse(canvas)
 let draw = new Draw(ctx)
 
+
+window.addEventListener('resize', ()=>{
+	canvas.width = canvas.getBoundingClientRect().width
+	canvas.height = canvas.getBoundingClientRect().height
+})
+
+input.addEventListener('blur', function(e){
+	text = input.value
+	init()
+})
+
+
 init()
 frame()
 
@@ -27,7 +40,7 @@ function init(){
 		textAlign: 'center',
 		textBaseline: 'middle'
 	})
-	draw.fillText(text, (canvas.width - fontSize) / 2 , canvas.height / 2);
+	draw.fillText(text, canvas.width / 2 , canvas.height / 2);
 	pixels = scene(ctx, animation.density)
 	for(var particle of pixels) {
 		particle.lx = particle.x
